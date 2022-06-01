@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Cookie Clicker</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <title>Cookie Clicker</title>
+    <h1>Cookie Clicker</h1>
+
+    <img class="center" src="Cookie.png" alt="cookie" onclick="increase()" />
+
+    <p>Cookies !:<span id="counter">0</span></p>
+
+    <button id="reset" onclick="reset()">Reset Cookies !</button>
+
+    <script>
+      let clicks = 0;
+      function increase() {
+        clicks = clicks + 1;
+        counter.innerHTML = clicks;
+      }
+      function reset() {
+        clicks = 0;
+        counter.innerHTML = clicks;
+      }
+    </script>
+  </body>
+</html>
